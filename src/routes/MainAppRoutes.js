@@ -14,7 +14,7 @@ import AppointmentScreen from '../components/screens/AppointmentScreen';
 import PatientProfile from '../components/screens/PatientProfile';
 import AllCategories from '../components/screens/AllCategories';
 // import Ionicons from 'react-native-vector-icons/Ionicons';
-import SplashScreen from '../components/screens/SplashScreen';
+// import SplashScreen from '../components/screens/SplashScreen';
 
 const Tab1StackNav = createNativeStackNavigator();
 const Tab2StackNav = createNativeStackNavigator();
@@ -25,7 +25,9 @@ const Tab = createBottomTabNavigator();
 
 function Tab1Stack() {
   return (
-    <Tab1StackNav.Navigator screenOptions={{headerShown: false}}>
+    <Tab1StackNav.Navigator
+      screenOptions={{headerShown: false}}
+      initialRouteName="Patietnt Home Screen">
       <Tab1StackNav.Screen
         name="Patient Home Screen"
         component={PatientHomeScreen}
@@ -130,7 +132,7 @@ function MainAppRoutes() {
   return (
     <NavigationContainer>
       <MainStack.Navigator>
-        <MainStack.Screen name="Splash Screen" component={SplashScreen} />
+        {/* <MainStack.Screen name="Splash Screen" component={SplashScreen} /> */}
         <MainStack.Screen name="HomeScreen" component={TabStack} />
       </MainStack.Navigator>
     </NavigationContainer>

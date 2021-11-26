@@ -17,15 +17,17 @@ import React, {Component} from 'react';
 // import SearchScreen from './components/screens/SearchScreen';
 // import AllDoctorScreen from './components/screens/AllDoctorScreen';
 // import AllCategories from './components/screens/AllCategories';
-import SplashScreen from './components/screens/SplashScreen';
-import MainAppRoutes from './routes/MainAppRoutes';
-import BookAppointmentScreen from './components/screens/BookAppointmentScreen';
+// import SplashScreen from './components/screens/SplashScreen';
+// import MainAppRoutes from './routes/MainAppRoutes';
+// import BookAppointmentScreen from './components/screens/BookAppointmentScreen';
+import One from './components/extras/One';
+import Two from './components/extras/Two';
 
 export class App extends Component {
   render() {
     // const store = createStore(reducers, {}, applyMiddleware(ReduxTunk));
     // <Provider store={store}>
-    return <MainAppRoutes />;
+    return <Two />;
     // </Provider>;
   }
 }

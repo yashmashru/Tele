@@ -7,3 +7,5 @@ export * from './TopTabBar';
 export * from './AppointmentsCard';
 export * from './DoctorProfileBioScreenCard';
 export * from './CategoriesCard2';
+export * from './Check1';
+export * from './Check2';
