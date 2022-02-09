@@ -9,44 +9,30 @@ import {
 
 export class AuthScreen extends Component {
   render() {
-    const {
-      viewStyle,
-      backgroundContainer,
-      backgroundImage,
-      loginStyle,
-      registerStyle,
-      LRstyle,
-    } = styles;
+    const {viewStyle, loginStyle, registerStyle, LRstyle} = styles;
     return (
       <View style={viewStyle}>
-        <ImageBackground
-          blurRadius={1}
-          style={{
-            height: '100%',
-            width: '100%',
-            alignItems: 'center',
-            justifyContent: 'center',
-          }}
-          source={require('../../images/Hospital.jpg')}>
-          <View style={LRstyle}>
-            <TouchableOpacity
-              style={loginStyle}
-              onPress={() => {
-                console.log(this.props);
-                this.props.navigation.navigate('Login Screen');
-              }}>
-              <Text style={{fontSize: 20, color: 'white'}}>Sign In</Text>
-            </TouchableOpacity>
-            <TouchableOpacity
-              style={registerStyle}
-              onPress={() => {
-                console.log(this.props);
-                this.props.navigation.navigate('Register Screen');
-              }}>
-              <Text style={{fontSize: 20, color: 'white'}}>Sign Up</Text>
-            </TouchableOpacity>
-          </View>
-        </ImageBackground>
+        <Text style={{fontSize: 40, color: 'white', marginBottom: '50%'}}>
+          Welcome to the Teledermatology!
+        </Text>
+        <View style={LRstyle}>
+          <TouchableOpacity
+            style={loginStyle}
+            onPress={() => {
+              console.log(this.props);
+              this.props.navigation.navigate('Login Screen');
+            }}>
+            <Text style={{fontSize: 20, color: 'white'}}>Sign In</Text>
+          </TouchableOpacity>
+          <TouchableOpacity
+            style={registerStyle}
+            onPress={() => {
+              console.log(this.props);
+              this.props.navigation.navigate('Register Screen');
+            }}>
+            <Text style={{fontSize: 20, color: 'white'}}>Sign Up</Text>
+          </TouchableOpacity>
+        </View>
       </View>
     );
   }
@@ -57,11 +43,13 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     flex: 1,
+    backgroundColor: '#2682D7',
+    flexDirection: 'column',
   },
   loginStyle: {
     height: 40,
     width: '80%',
-    backgroundColor: 'grey',
+    backgroundColor: 'black',
     borderRadius: 10,
     alignItems: 'center',
     justifyContent: 'center',
@@ -70,7 +58,7 @@ const styles = StyleSheet.create({
   registerStyle: {
     height: 40,
     width: '80%',
-    backgroundColor: 'grey',
+    backgroundColor: 'black',
     alignItems: 'center',
     justifyContent: 'center',
     borderRadius: 10,

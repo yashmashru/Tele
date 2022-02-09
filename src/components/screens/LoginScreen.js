@@ -13,15 +13,6 @@ export class LoginScreen extends Component {
     return (
       <KeyboardAvoidingView
         style={{backgroundColor: '#2682D7', height: '100%', width: '100%'}}>
-        {/* <ImageBackground
-          blurRadius={2}
-          style={{
-            height: '100%',
-            width: '100%',
-            // alignItems: 'center',
-            // justifyContent: 'center',
-          }}
-          source={require('../../images/Hospital.jpg')}> */}
         <View style={{marginLeft: '4%', marginTop: '4%'}}>
           <Text
             style={{
@@ -88,12 +79,11 @@ export class LoginScreen extends Component {
             }}
             onPress={() => {
               console.log(this.props);
-              this.props.navigation.navigate('Patient Home Screen');
+              this.props.navigation.navigate('HomeScreenS');
             }}>
             <Text style={{fontSize: 20, color: 'white'}}>Sign In</Text>
           </TouchableOpacity>
         </KeyboardAvoidingView>
-        {/* </ImageBackground> */}
       </KeyboardAvoidingView>
     );
   }

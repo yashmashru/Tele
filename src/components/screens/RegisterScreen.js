@@ -107,7 +107,7 @@ export class RegisterScreen extends Component {
                 }}
                 onPress={() => {
                   console.log(this.props);
-                  this.props.navigation.navigate('Patient Home Screen');
+                  this.props.navigation.navigate('HomeScreenS');
                 }}>
                 <Text style={{fontSize: 20, color: 'white'}}>Sign Up</Text>
               </TouchableOpacity>
